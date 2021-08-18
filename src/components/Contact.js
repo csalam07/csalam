@@ -22,7 +22,12 @@ const ContactInformation = ({ Icon, title, subtitle }) => {
   );
 };
 
-function Contact() {
+function Contact({ data }) {
+  if (data) {
+    var email = data.email;
+    var phone = data.phone;
+    var location = data.address;
+  }
   return (
     <section className="contact section" id="contact">
       <h2 className="section__title">Contact Me</h2>
@@ -33,19 +38,19 @@ function Contact() {
           <ContactInformation
             Icon={HiOutlinePhoneMissedCall}
             title="Call me"
-            subtitle="991-234-567"
+            subtitle={phone}
           />
 
           <ContactInformation
             Icon={HiOutlineMail}
             title="Email"
-            subtitle="sam@gamil.com"
+            subtitle={email}
           />
 
           <ContactInformation
             Icon={HiOutlineLocationMarker}
             title="Location"
-            subtitle="Bangalore - India 563500"
+            subtitle={location}
           />
         </div>
         <form className="contact__form grid">
