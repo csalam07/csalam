@@ -66,7 +66,12 @@ function Header({ data }) {
     window.addEventListener("scroll", changeNavbar);
   });
 
-  const handleAction = (index) => {
+  const handleAction = (e, index, id) => {
+    e && e.preventDefault();
+    const elementToView = document.getElementById(id);
+    elementToView.scrollIntoView({
+      behavior: "smooth",
+    });
     setActiveTab(index);
   };
 
@@ -83,7 +88,7 @@ function Header({ data }) {
               <a
                 href="#home"
                 className={`nav__link ${activeTab === 1 && "active-link"}`}
-                onClick={() => handleAction(1)}
+                onClick={(e) => handleAction(e, 1, "home")}
               >
                 <i className="nav__icon">
                   <GoHome />
@@ -94,7 +99,7 @@ function Header({ data }) {
 
             <li className="nav__item">
               <a
-                onClick={() => handleAction(2)}
+                onClick={(e) => handleAction(e, 2, "about")}
                 href="#about"
                 className={`nav__link ${activeTab === 2 && "active-link"}`}
               >
@@ -109,7 +114,7 @@ function Header({ data }) {
               <a
                 href="#skills"
                 className={`nav__link ${activeTab === 3 && "active-link"}`}
-                onClick={() => handleAction(3)}
+                onClick={(e) => handleAction(e, 3, "skills")}
               >
                 <i className="nav__icon">
                   <SiSkillshare />
@@ -122,7 +127,7 @@ function Header({ data }) {
               <a
                 href="#services"
                 className={`nav__link ${activeTab === 4 && "active-link"}`}
-                onClick={() => handleAction(4)}
+                onClick={(e) => handleAction(e, 4, "services")}
               >
                 <i className="nav__icon">
                   <BiBriefcase />
@@ -135,7 +140,7 @@ function Header({ data }) {
               <a
                 href="#portfolio"
                 className={`nav__link ${activeTab === 5 && "active-link"}`}
-                onClick={() => handleAction(5)}
+                onClick={(e) => handleAction(e, 5, "portfolio")}
               >
                 <i className="nav__icon">
                   <AiOutlinePicture />
@@ -148,7 +153,7 @@ function Header({ data }) {
               <a
                 href="#contact"
                 className={`nav__link ${activeTab === 6 && "active-link"}`}
-                onClick={() => handleAction(1)}
+                onClick={(e) => handleAction(e, 6, "contact")}
               >
                 <i className="nav__icon">
                   <AiOutlineMessage />

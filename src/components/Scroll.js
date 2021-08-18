@@ -15,9 +15,18 @@ function Scroll() {
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
   });
+
+  const scrollTop = (e, id) => {
+    e && e.preventDefault();
+    const elementToView = document.getElementById(id);
+    elementToView.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
   return (
     <a
       href="#home"
+      onClick={(e) => scrollTop(e, "home")}
       className={`scrollup ${scrollUp && "show-scroll"}`}
       id="scroll-up"
     >
