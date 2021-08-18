@@ -1,0 +1,21 @@
+.footer {
+  padding-top: 2rem;
+}
+
+.footer__bg {
+  background-color: var(--first-color-second);
+  padding: 2rem 0 3rem;
+}
+
+.footer__copy {
+  font-size: var(--smaller-font-size);
+  text-align: center;
+  color: lightgray;
+  margin-bottom: var(--mb-2);
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.footer__copy:hover {
+  color: white;
+}

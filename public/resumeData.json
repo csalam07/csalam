@@ -1,0 +1,180 @@
+{
+  "logo": "CSAlam07",
+  "home": {
+    "name": "Shahbaz",
+    "image": "csalam07.png",
+    "occupation": "React Developer",
+    "description": "An Open Source Enthusiast who is highly passionate about building fast, creating applications and writing beautiful codes.",
+    "social": {
+      "instagram": "https://www.instagram.com/cs.alam/",
+      "facebook": "https://www.facebook.com/sammar.alikhan.927/",
+      "github": "https://github.com/csalam07"
+    }
+  },
+  "about": {
+    "image": "7_adobespark.png",
+    "experience": "12",
+    "projects": "20",
+    "company": "nill",
+    "cv": "cv.pdf",
+    "description": "I'm a JavaScript Developer  , a Competitive Programmer, a Technical Writer, and an Open Source Enthusiast who is highly passionate about building fast, creating applications and writing beautiful codes."
+  },
+  "skills": {
+    "skills1": {
+      "id": "1",
+      "role": "Frontend Developer",
+      "experience": "1",
+      "language": ["JavaScript", "HTML", "CSS", "React", "Redux", "Nextjs"]
+    },
+    "skills2": {
+      "id": "2",
+      "role": "Backend Developer",
+      "experience": "1",
+      "language": ["Java", "Nodejs", "Python", "Firebase", "Docker"]
+    },
+    "skills3": {
+      "id": "3",
+      "role": "Database",
+      "experience": "1",
+      "language": ["MySQL", "MongoDB", "Firebase"]
+    },
+    "skills4": {
+      "id": "4",
+      "role": "Mobile Developer",
+      "experience": "1",
+      "language": ["Java", "Kotline", "Flutter"]
+    }
+  },
+  "qualification": {
+    "education": [
+      {
+        "school": "Bangalre Technological Institute",
+        "degree": "Computer Science Engineering",
+        "year": "2019 - present"
+      },
+      {
+        "school": "Delhi Public School",
+        "degree": "Higher Secondary",
+        "year": "2017 - 2019"
+      },
+      {
+        "school": "Angel International Secondary Boarding School",
+        "degree": "S.E.E",
+        "year": "2017"
+      }
+    ],
+    "work": [
+      {
+        "year": "2020-present",
+        "jobTitle": " Android Developer -  Freelancing",
+        "description": "Learning, freelancing, exploring & contributing to open source android libararies and enjoying by creating android applications and android libraries."
+      },
+      {
+        "year": "2020-present",
+        "jobTitle": "Web Developer - Freelancing",
+        "description": "Learning, freelancing, exploring & contributing to open source android libararies and enjoying by creating every types web applications"
+      },
+      {
+        "year": "2020-present",
+        "jobTitle": "Mentor",
+        "description": "Guiding a less experienced students by building trust and modeling positive behaviors"
+      }
+    ]
+  },
+  "services": [
+    {
+      "title": "Ui/Ux Designer",
+      "description": [
+        "I develop the user interface.",
+        "Web page development.",
+        "I create ux element interactions.",
+        "I position your company brand."
+      ]
+    },
+    {
+      "title": "Android Applications",
+      "description": [
+        "I develop the android applications.",
+        "responsive to all screen sizes",
+        "Secure and well optimized",
+        "I position your company applications."
+      ]
+    },
+    {
+      "title": "Web Applications",
+      "description": [
+        "I develop the web applications.",
+        "responsive to all browsers",
+        "Secure and well optimized",
+        "I position your company websites."
+      ]
+    }
+  ],
+
+  "portfolio": [
+    {
+      "id": "1",
+      "date": "2021",
+      "title": "Google Docs",
+      "category": "nextjs",
+      "image": "googledocs.jpg",
+      "description": "A simple google docs app built with nextjs framework.",
+      "url": "https://netflix-replica.vercel.app/"
+    },
+    {
+      "id": "2",
+      "date": "2021",
+      "title": "Amazon Replica",
+      "category": "nextjs",
+      "image": "amazon.png",
+      "description": "A simple amazon replica app built with nextjs framework.",
+      "url": "https://amazon-replica.vercel.app/"
+    },
+    {
+      "id": "3",
+      "date": "2021",
+      "title": "Slack Replica",
+      "category": "reactjs",
+      "image": "slack.png",
+      "description": "A simple slack replica app built with reactjs framework.",
+      "url": "https://slack-b7072.web.app/"
+    },
+
+    {
+      "id": "4",
+      "date": "2021",
+      "title": "Netflix",
+      "category": "nextjs",
+      "image": "netflix.png",
+      "description": "A simple Netflix app built with nextjs framework.",
+      "url": "https://netflix-replica.vercel.app/"
+    },
+    {
+      "id": "5",
+      "date": "2021",
+      "title": "Gmail Replica",
+      "category": "raectjs",
+      "image": "gmail.png",
+      "description": "A simple gmail replica app built with reactjs framework.",
+      "url": "https://fir-843dc.firebaseapp.com/"
+    },
+    {
+      "id": "6",
+      "date": "2020",
+      "title": "BTIian",
+      "category": "mobile",
+      "image": "bttian.png",
+      "description": "A simple btiian app built with android java.",
+      "url": "www.github.com/csalam07"
+    }
+  ],
+  "contact": {
+    "email": "papareact.team@gmail.com",
+    "phone": "+44 1234567899",
+    "address": {
+      "street": "Sarjapura",
+      "city": "Bangalore",
+      "zip": "563500"
+    }
+  }
+}
