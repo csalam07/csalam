@@ -41,7 +41,7 @@ function About({ data }) {
             <AboutIno title="5" name="Open Source" subName="contribution" />
           </div>
           <div className="about__buttons">
-            <a href={`assets/pdf/${cv}`} className="button button--flex">
+            <a href={`/${cv}`} className="button button--flex">
               Dowlaod CV
               <i className="button__icon">
                 <AiOutlineFilePdf />
