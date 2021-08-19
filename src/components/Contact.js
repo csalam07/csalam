@@ -5,7 +5,7 @@ import {
   HiOutlinePhoneMissedCall,
   HiOutlineLocationMarker,
 } from "react-icons/hi";
-import { AiOutlineSend } from "react-icons/ai";
+import ContactForm from "./ContactForm";
 
 const ContactInformation = ({ Icon, title, subtitle }) => {
   return (
@@ -53,50 +53,7 @@ function Contact({ data }) {
             subtitle={location}
           />
         </div>
-        <form className="contact__form grid">
-          <div className="contact__inputs grid">
-            <div className="contact__content">
-              <lable htmlFor="" className="contact__lable">
-                Name
-              </lable>
-              <input type="text" className="contact__input" name="name" />
-            </div>
-
-            <div className="contact__content">
-              <lable htmlFor="" className="contact__lable">
-                Email
-              </lable>
-              <input type="email" className="contact__input" name="name" />
-            </div>
-          </div>
-          <div className="contact__content">
-            <lable htmlFor="" className="contact__lable">
-              Project
-            </lable>
-            <input type="text" className="contact__input" name="name" />
-          </div>
-          <div className="contact__content">
-            <lable htmlFor="" className="contact__lable">
-              Message
-            </lable>
-            <textarea
-              name=""
-              id=""
-              cols="0"
-              rows="7"
-              className="contact__input"
-            ></textarea>
-          </div>
-
-          <div>
-            <a href="/" className="button button--flex">
-              Send Message
-              <i className="button__icon">
-                <AiOutlineSend />
-              </i>
-            </a>
-          </div>
-        </form>
+        <ContactForm />
       </div>
     </section>
   );

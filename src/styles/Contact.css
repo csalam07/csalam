@@ -7,6 +7,11 @@
   margin-bottom: var(--mb-2);
 }
 
+.success {
+  background-color: var(--success-color);
+  transition: all 0.3s ease-in-out;
+}
+
 .contact__icon {
   font-size: 2rem;
   color: var(--first-color);
