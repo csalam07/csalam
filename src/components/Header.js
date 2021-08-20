@@ -78,7 +78,11 @@ function Header({ data }) {
   return (
     <header className={`header ${scrollHeader && "scroll-header"}`} id="header">
       <nav className="nav container">
-        <a href="/" className="nav__logo">
+        <a
+          href="/"
+          className="nav__logo"
+          onClick={(e) => handleAction(e, 0, "home")}
+        >
           {data}
         </a>
 

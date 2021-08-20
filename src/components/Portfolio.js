@@ -95,6 +95,14 @@ function Portfolio({ data }) {
     setItems(data);
     setActive("all");
   }, [data]);
+
+  const navigate = (e, id) => {
+    e && e.preventDefault();
+    const elementToView = document.getElementById(id);
+    elementToView.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
   return (
     <>
       <section className="portfolio section" id="portfolio">
@@ -167,37 +175,6 @@ function Portfolio({ data }) {
             </div>
           ))}
         </div>
-        {/* <div className="work__container container bd-grid">
-          {projects?.map((project) => (
-            <SinglePortfolio
-              key={project.id}
-              id={project.id}
-              image="portfolio1.jpg"
-              setShowModal={setShowModal}
-              title={project.title}
-              description={project.description}
-              category={project.category}
-              url={project.url}
-            />
-          ))}
-          {showModal && (
-            <div className="work__modal">
-              <div className="modal__container">
-                <Popup
-                  date="2014"
-                  technlogies="react"
-                  role="software engineer"
-                  link="www.ggogle.com"
-                  image="/img/portfolio1.jpg"
-                  description="lorem14 nkvbdkjv dacnadbvkadv ncjkadbd vdjkvbjdbgvd fafdbgafhdabfdabfjkad ad fdifbdjkbvd hdafgahdf abdvbjdbvdj"
-                  title="website"
-                  showModal={showModal}
-                  setShowModal={setShowModal}
-                />
-              </div>
-            </div>
-          )}
-        </div> */}
       </section>
 
       <section className="project section">
@@ -208,7 +185,11 @@ function Portfolio({ data }) {
               <p className="project__description">
                 Connect me now and get a 30% discount on your new project
               </p>
-              <a href="/" className="button button--flex button--white">
+              <a
+                href="/contact"
+                className="button button--flex button--white"
+                onClick={(e) => navigate(e, "contact")}
+              >
                 Connect Me
                 <i className="uil uil-message project__icon button__icon">
                   <AiOutlineSend />

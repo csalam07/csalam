@@ -17,6 +17,14 @@ function Home({ data }) {
     var facebook = social.facebook;
     var github = social.github;
   }
+
+  const navigate = (e, id) => {
+    e && e.preventDefault();
+    const elementToView = document.getElementById(id);
+    elementToView.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
   return (
     <section className="home section" id="home">
       <div className="home__container container grid">
@@ -62,7 +70,11 @@ function Home({ data }) {
             <h1 className="home__title">Hi, I am {name}</h1>
             <h3 className="home__subtitle">{occupation}</h3>
             <p className="home__description">{description}</p>
-            <a href="#contact" className="button button--flex home__button">
+            <a
+              href="#contact"
+              className="button button--flex home__button"
+              onClick={(e) => navigate(e, "contact")}
+            >
               Contact Me{" "}
               <i className=" button__icon">
                 <RiSendPlane2Line />
@@ -71,14 +83,14 @@ function Home({ data }) {
           </div>
         </div>
         <div className="home__scroll">
-          <a href="#about" className="home__scroll-button button--flex">
+          <a
+            href="#about"
+            className="home__scroll-button button--flex"
+            onClick={(e) => navigate(e, "about")}
+          >
             <i className=" home__scroll-mouse">
               <CgMouse />
             </i>
-            {/* <span className="home_scroll-name">Scroll down</span>
-            <i className=" home__scroll-arrow">
-              <FiArrowDown />
-            </i> */}
           </a>
         </div>
       </div>
